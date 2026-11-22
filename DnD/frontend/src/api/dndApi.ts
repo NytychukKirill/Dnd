@@ -10,7 +10,7 @@ import type{
 
 export const tokenStorage = {
     getApiBase(): string {
-        return localStorage.getItem('dnd_api_base') || 'http://localhost:5000';
+        return localStorage.getItem('dnd_api_base') || 'http://localhost:5062';
     },
     setApiBase(url: string): void {
         localStorage.setItem('dnd_api_base', url.replace(/\/+$/, ''));
